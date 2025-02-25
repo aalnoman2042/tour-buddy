@@ -24,7 +24,7 @@ const Navbar = () => {
                 </button>
 
          
-                <a className="hidden lg:block bg-[#FFDA32] px-7 py-2 rounded-lg">Sign In</a>
+                <a className="hidden lg:block bg-[#FFDA32] px-7 py-2 rounded-lg font-bold">Sign In</a>
             </div>
             
             {/* Mobile Menu */}
@@ -35,7 +35,7 @@ const Navbar = () => {
                     <li><a href="#" className="block hover:text-gray-700">Our Most Rated Guides</a></li>
                     <li><a href="#" className="block hover:text-gray-700">Our Packages</a></li>
                     <li><a href="#" className="block hover:text-gray-700">Most Desired Places</a></li>
-                    <li><a className="bg-[#FFDA32] px-7 py-2 rounded-lg block text-center">Sign In</a></li>
+                    <li><a className="bg-[#FFDA32] px-7 py-2 rounded-lg block text-center font-bold">Sign In</a></li>
                 </ul>
             )}
         </nav>
