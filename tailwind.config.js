@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        nico: ['Nico moji', 'sans-serif', 'Inria Serif Bold'], 
+        nico: ['Nico moji', 'sans-serif', 'Inria Serif Bold','Volkhov Bold'], 
       },
     },
   },
