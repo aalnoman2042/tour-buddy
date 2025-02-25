@@ -24,7 +24,7 @@ const Navbar = () => {
                 </button>
 
          
-                <a className="hidden lg:block bg-[#FFDA32] px-7 py-2 rounded-lg">Button</a>
+                <a className="hidden lg:block bg-[#FFDA32] px-7 py-2 rounded-lg">Sign In</a>
             </div>
             
             {/* Mobile Menu */}

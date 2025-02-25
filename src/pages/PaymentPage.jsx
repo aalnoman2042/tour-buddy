@@ -9,13 +9,14 @@ const PaymentPage = () => {
       <div className="flex flex-col md:flex-row justify-center gap-24 mt-9">
         
         {/* Payment Image Section */}
-        <div className="md:w-72 md:h-[260px] border-2 border-black rounded-3xl mb-10 md:mb-0">
-          <img
-            className="md:w-72 md:h-64 border-2 rounded-3xl"
-            src={paymentImage}
-            alt="Payment"
-          />
-        </div>
+        <div className="w-full sm:w-64 md:w-72 sm:h-[220px] md:h-[260px] border-2 border-black rounded-3xl mb-6 sm:mb-8 md:mb-0 flex justify-center items-center">
+  <img
+    className="w-full sm:w-64 md:w-72 h-auto sm:h-[200px] md:h-64 border-2 rounded-3xl"
+    src={paymentImage}
+    alt="Payment"
+  />
+</div>
+
 
         {/* Form Section */}
         <div className="w-full md:w-auto">

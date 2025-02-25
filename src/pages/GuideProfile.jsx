@@ -11,54 +11,60 @@ const GuideProfile = () => {
         <div className="w-full md:w-auto">
           <h1 className="font-bold mt-28">Your Selected Guide:</h1>
           <div>
-            <div className="flex flex-col md:flex-row gap-9 shadow-xl my-10 p-9 rounded-lg">
-              {/* image section */}
-              <div className="avatar">
-                <div className="w-32 rounded">
-                  <img src={guuideImage} alt="Guide" />
-                </div>
-              </div>
-              {/* details section */}
-              <div className="ml-4">
-                <div className="flex">
-                  <button className="bg-[#7BBCB0] btn flex justify-center px-10 rounded-3xl text-white hover:text-black">
-                    Kuakata
-                  </button>
-                  <div className="flex items-center ml-8">
-                    <i className="fa-solid fa-star text-[#ffa432]"></i>
-                    <i className="fa-solid fa-star text-[#ffa432]"></i>
-                    <i className="fa-solid fa-star text-[#ffa432]"></i>
-                    <i className="fa-solid fa-star text-[#ffa432]"></i>
-                    <i className="fa-regular fa-star text-[#ffa432]"></i>
-                    <p className="ml-4">(584 reviews)</p>
-                  </div>
-                </div>
+          <div className="flex flex-col md:flex-row gap-6 md:gap-9 shadow-xl my-10 p-6 md:p-9 rounded-lg w-full max-w-4xl mx-auto">
+  {/* Image Section */}
+  <div className="flex justify-center md:justify-start">
+    <div className="avatar">
+      <div className="w-24 md:w-32 rounded">
+        <img src={guuideImage} alt="Guide" />
+      </div>
+    </div>
+  </div>
 
-                <p className="mt-2 font-semibold text-lg">Raihan Ahmed</p>
+  {/* Details Section */}
+  <div className="flex-1">
+    <div className="flex flex-wrap items-center gap-4">
+      <button className="bg-[#7BBCB0] btn px-6 md:px-10 py-2 rounded-3xl text-white hover:text-black">
+        Kuakata
+      </button>
+      <div className="flex items-center">
+        <i className="fa-solid fa-star text-[#ffa432]"></i>
+        <i className="fa-solid fa-star text-[#ffa432]"></i>
+        <i className="fa-solid fa-star text-[#ffa432]"></i>
+        <i className="fa-solid fa-star text-[#ffa432]"></i>
+        <i className="fa-regular fa-star text-[#ffa432]"></i>
+        <p className="ml-2">(584 reviews)</p>
+      </div>
+    </div>
 
-                {/* Moved the Details Below Raihan Ahmed */}
-                <div className="mt-2 space-y-1 flex gap-7">
-                  <p className="text-sm">
-                    <i className="fa-regular fa-clock"></i> 2 hours
-                  </p>
-                  <p className="text-sm">
-                    <i className="fa-solid fa-car-side"></i> Transport
-                  </p>
-                  <p className="text-sm">
-                    <i className="fa-solid fa-people-group"></i> Family Plan
-                  </p>
-                </div>
-              </div>
-              {/* tk section */}
-              <div>
-                <p className="text-lg text-[#7BBCB0] font-semibold">
-                  Tk 250.00 <br />
-                  <p className="font-thin text-sm flex justify-end">
-                    per person
-                  </p>
-                </p>
-              </div>
-            </div>
+    <p className="mt-2 font-semibold text-lg text-center md:text-left">
+      Raihan Ahmed
+    </p>
+
+    {/* Details Section */}
+    <div className="mt-2 flex flex-wrap justify-center md:justify-start gap-4">
+      <p className="text-sm flex items-center">
+        <i className="fa-regular fa-clock mr-2"></i> 2 hours
+      </p>
+      <p className="text-sm flex items-center">
+        <i className="fa-solid fa-car-side mr-2"></i> Transport
+      </p>
+      <p className="text-sm flex items-center">
+        <i className="fa-solid fa-people-group mr-2"></i> Family Plan
+      </p>
+    </div>
+  </div>
+
+  {/* Price Section */}
+  <div className="text-center md:text-right">
+    <p className="text-lg text-[#7BBCB0] font-semibold">
+      Tk 250.00
+      <br />
+      <span className="font-thin text-sm">per person</span>
+    </p>
+  </div>
+</div>
+
           </div>
         </div>
 
@@ -97,42 +103,48 @@ const GuideProfile = () => {
 
       {/* customer review */}
       <div>
-  <div className="flex flex-col sm:flex-row justify-center gap-20">
+      <div className="flex flex-col sm:flex-row justify-center gap-10 sm:gap-20 w-full mx-4 sm:mx-0">
 
-  {/* Customer Review Title */}
-  <div className="w-1/4 sm:order-1">
-    <p className="font-bold font-Volkhov">Customer Review</p>
-  </div>
+{/* Customer Review Title */}
+<div className="w-full sm:w-1/4 text-center sm:text-left sm:order-1">
+  <p className="font-bold font-Volkhov text-lg sm:text-xl">Customer Review</p>
+</div>
 
-  {/* Progress Bars Section */}
-  <div className="w-3/4 max-w-md sm:order-2">
-    <p className="flex justify-between items-center">
-      Guide
-      <span>4.8</span>
-    </p>
-    <progress className="progress progress-warning w-full" value="90" max="100"></progress>
-
+{/* Progress Bars Section */}
+<div className="w-full sm:w-3/4 max-w-md sm:order-2">
+  
+  {/* Safety Rating (Will Be First on Mobile) */}
+  <div className="order-1 sm:order-none">
     <p className="flex justify-between items-center mt-2">
-      Transportation
-      <span>3.0</span>
-    </p>
-    <progress className="progress progress-warning w-full" value="60" max="100"></progress>
-
-    <p className="flex justify-between items-center mt-2">
-      Value For Money
-      <span>4.5</span>
-    </p>
-    <progress className="progress progress-warning w-full" value="80" max="100"></progress>
-
-    {/* Safety Rating will be first on mobile */}
-    <p className="flex justify-between items-center mt-2 sm:order-1">
       Safety
       <span>4.0</span>
     </p>
     <progress className="progress progress-warning w-full" value="85" max="100"></progress>
   </div>
 
+  {/* Other Ratings */}
+  <p className="flex justify-between items-center mt-2">
+    Guide
+    <span>4.8</span>
+  </p>
+  <progress className="progress progress-warning w-full" value="90" max="100"></progress>
+
+  <p className="flex justify-between items-center mt-2">
+    Transportation
+    <span>3.0</span>
+  </p>
+  <progress className="progress progress-warning w-full" value="60" max="100"></progress>
+
+  <p className="flex justify-between items-center mt-2">
+    Value For Money
+    <span>4.5</span>
+  </p>
+  <progress className="progress progress-warning w-full" value="80" max="100"></progress>
+
 </div>
+
+</div>
+
 
 
   {/* Reviews Section */}
