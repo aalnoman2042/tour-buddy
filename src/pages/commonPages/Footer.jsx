@@ -8,7 +8,7 @@ import maestro from "../../assets/paymentMethodImages/maestro.png";
 import payPal from "../../assets/paymentMethodImages/payPal.png";
 import sofert from "../../assets/paymentMethodImages/sofert.png";
 import visa from "../../assets/paymentMethodImages/visa.png";
-
+// import australia from '../../assets/guideProfile/images.png'
 const Footer = () => {
   return (
     <div>
@@ -21,7 +21,7 @@ const Footer = () => {
             <h6 className="font-nico text-xl">Tour Buddy</h6>
             <div className="mt-4 space-y-2">
               <select className="select select-bordered text-cyan-100 bg-transparent border-cyan-100 w-full md:w-auto">
-                <option disabled selected>Australia</option>
+             <option disabled selected>Australia</option>
                 <option>Bangladesh</option>
                 <option>Pakistan</option>
                 <option>Afghanistan</option>

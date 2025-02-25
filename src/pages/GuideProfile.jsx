@@ -52,6 +52,11 @@ const GuideProfile = () => {
       <p className="text-sm flex items-center">
         <i className="fa-solid fa-people-group mr-2"></i> Family Plan
       </p>
+      <p><i className="fa-solid fa-phone-volume"></i>
+        +880182937879</p>
+    </div>
+    <div className="my-4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59257.68239994782!2d90.12686369778997!3d21.834181761714756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30aa7d1b38a082bd%3A0xce33209b2416f816!2sKuakata!5e0!3m2!1sen!2sbd!4v1740494971091!5m2!1sen!2sbd" width="100" height="100" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 
@@ -95,7 +100,7 @@ const GuideProfile = () => {
   {/* Proficiency Section */}
   <div className="bg-[#E6E6E6] rounded-3xl order-2 sm:order-none mt-5 sm:mt-0">
     <p className="text-center p-6">
-      Proficiency in: English, Bangla, and French. <br /> Guided: Nearly
+    <i className="fa-solid fa-language"></i> Proficiency in: English, Bangla, and French. <br /> Guided: Nearly
       20 individuals.
     </p>
   </div>
